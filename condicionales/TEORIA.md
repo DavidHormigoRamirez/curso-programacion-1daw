@@ -116,7 +116,7 @@ if (condicion) {
     if (otra_condicion) {
         // SOLO SE EJECUTA SI CONDICION y OTRA_CONDICION SON VEERDAERS
     }
-    els {
+    else {
         // SE EJECUTA SI CONDICION ES VERDADERA y OTRA_CONDICION ES FALSA
     }
 }
