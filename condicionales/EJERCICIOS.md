@@ -228,7 +228,11 @@ La última cifra del número introducido es el 8
 ```
 Por favor, introduzca un número entero: 0
 La última cifra del número introducido es el 0
+
 ```
+
+*Pista -> Operación módulo*
+
 # Ejercicio 10
 Escribe un programa que diga cuál es la primera cifra de un número entero positivo introducido por teclado. Se permiten números de hasta 5 cifras.
 
@@ -251,7 +255,10 @@ La primera cifra del número introducido es el 0.
 ```
 Por favor, introduzca un número entero positivo (de 5 cifras como máximo): 90721
 La primera cifra del número introducido es el 9.
+
 ```
+*Pista -> Divisiones enteras*
+
 # Ejercicio 11
 Realiza un programa que nos diga cuántos dígitos tiene un número entero que puede ser positivo o negativo. Se permiten números de hasta 5 dígitos.
 
@@ -274,7 +281,17 @@ El número introducido tiene 3 dígitos.
 ```
 Por favor, introduzca un número entero (5 cifras como máximo): 0
 El número introducido tiene 1 dígito.
+
 ```
+
+## Ejemplo 5
+```
+Por favor, introduzca un número entero (5 cifras como máximo): 700000
+El número introducido tiene más de cinco cifras
+
+```
+
+*Pista -> Comparando rangos*
 # Ejercicio 12
 Realiza un programa que diga si un número entero positivo introducido por teclado es capicúa. Se permiten
 números de hasta 5 cifras.

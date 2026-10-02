@@ -1,14 +1,5 @@
 # Ejercicio 1
-Crea la clase Fraccion. Los atributos serán numerador y denominador. Y algunos de los métodos pueden
-ser invierte, simplifica, multiplica, divide, etc. Prueba la clase creada en un programa en el que se
-instancien objetos y se les apliquen métodos.
-Ejemplo:
--7/8 x 5 = -35/8
--7/8 ^-1 = -8/7
--7/8 x 3/5 = -21/40
--7/8 : 3/5 = -35/24
--910/350 = -13/5
-# Ejercicio 2
+
 Crea la clase Vehiculo, así como las clases Bicicleta y Coche como subclases de la primera. Para la clase
 Vehiculo, crea los atributos de clase vehiculosCreados y kilometrosTotales, así como el atributo de
 instancia kilometrosRecorridos. Crea también algún método específico para cada una de las subclases.
@@ -34,3 +25,15 @@ Elige una opción (1-7):
 Elige una opción (1-7):
 2
 Estoy haciendo el caballito
+
+# Ejercicio 2
+
+Crea la clase Fraccion. Los atributos serán numerador y denominador. Y algunos de los métodos pueden
+ser invierte, simplifica, multiplica, divide, etc. Prueba la clase creada en un programa en el que se
+instancien objetos y se les apliquen métodos.
+Ejemplo:
+-7/8 x 5 = -35/8
+-7/8 ^-1 = -8/7
+-7/8 x 3/5 = -21/40
+-7/8 : 3/5 = -35/24
+-910/350 = -13/5

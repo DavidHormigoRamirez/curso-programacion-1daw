@@ -24,6 +24,30 @@ Un constructor es una subrutina cuya misión es inicializar un objeto de una cla
 Un método es una subrutina cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, como a un objeto, como es el caso de los métodos de instancia.
 Podemos considerar al método como el pedido a un objeto para que realice una tarea determinada o como la vía para enviar un mensaje al objeto y que este reaccione acorde a dicho mensaje.
 ### Herencía
+La herencia facilita la creación de objetos a partir de otros ya existentes e implica que una subclase obtiene todo el comportamiento (métodos) y finalmente los atributos (variables) de su superclase.
+
+```mermaid
+
+---
+title: Animal example
+---
+classDiagram
+class Padre {
+    +int atributo
+    +metodo()
+
+}
+
+class Hija {
+    +int atributo
+    +metodo()
+
+}
+
+Padre <|-- Hija
+
+```
+
 ## Programación orientada a objetos en Java
 ### Sintaxis de clase
 ```java
@@ -90,7 +114,13 @@ System.out.println(Cats.catsBorn);
 > 1
 ```
 ### Herencía
+
+**Java** soporta la herencia simple: una clase puede heredar unicamente de una clase padre.
+
+Veamos un ejemplo: 
+
 ```java
+
 public class Animal {
     private String name;
     private String family;
@@ -101,6 +131,13 @@ public class Animal {
     public Animal(String name, String family) {
         this.name = name;
         this.family = family;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+    public String getFamily() {
+        return this.family;
     }
 }
 // Decimos que gato es una especie de animal
@@ -123,4 +160,34 @@ public class Dog extends Animal {
         super(name,"Canidae");
     }
 }
+
+```
+
+```mermaid
+
+---
+title: Animal example
+---
+classDiagram
+class Animal {
+    -String name
+    -String family
+    +getName() String
+    +getFamily() String
+    
+}
+
+class Cat {
+    +getName() String
+    +getFamily() String
+}
+
+class Dog {
+    +getName() String
+    +getFamily() String
+}
+
+Animal <|-- Cat
+Animal <|-- Dog
+
 ```
