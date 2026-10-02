@@ -27,10 +27,7 @@ Podemos considerar al método como el pedido a un objeto para que realice una ta
 La herencia facilita la creación de objetos a partir de otros ya existentes e implica que una subclase obtiene todo el comportamiento (métodos) y finalmente los atributos (variables) de su superclase.
 
 ```mermaid
-
----
-title: Animal example
----
+F
 classDiagram
 class Padre {
     +int atributo
@@ -165,9 +162,6 @@ public class Dog extends Animal {
 
 ```mermaid
 
----
-title: Animal example
----
 classDiagram
 class Animal {
     -String name
