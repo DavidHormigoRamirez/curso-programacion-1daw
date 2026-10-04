@@ -37,3 +37,13 @@ Ejemplo:
 -7/8 x 3/5 = -21/40
 -7/8 : 3/5 = -35/24
 -910/350 = -13/5
+
+# Ejercicio 3
+
+Crea la clase Poligono. Debe tener una propiedad *número de lados". Debe tener un método que calcule el area y un método que calcule el perimetros.
+Crea la clase Cuadrado que herede de Poligono y sobreescriba los métodos. Crea los constructores necesarios para crear un cuadrado.
+Crea la clase Triangulo que herede también de Poligono y sobreescriba los métodos heredados. Crea los consutructores necesarios para crear un triangulo.
+
+# Ejercicio 4
+Crea una clase llamada Entero, que tenga un atributo de un número entero de hasta 5 cifras.
+Implementa los métodos primeraCifra, ultimaCifra, cantidadDigitos y esCapicua (este devuelve un booleano)

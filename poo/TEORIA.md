@@ -27,21 +27,21 @@ Podemos considerar al método como el pedido a un objeto para que realice una ta
 La herencia facilita la creación de objetos a partir de otros ya existentes e implica que una subclase obtiene todo el comportamiento (métodos) y finalmente los atributos (variables) de su superclase.
 
 ```mermaid
-F
+
 classDiagram
-class Padre {
+class ClasePadre {
     +int atributo
     +metodo()
 
 }
 
-class Hija {
+class ClaseHija {
     +int atributo
     +metodo()
 
 }
 
-Padre <|-- Hija
+ClasePadre <|-- ClaseHija
 
 ```
 
