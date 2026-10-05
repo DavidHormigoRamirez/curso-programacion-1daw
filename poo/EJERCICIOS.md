@@ -4,7 +4,10 @@ Crea la clase Vehiculo, así como las clases Bicicleta y Coche como subclases de
 Vehiculo, crea los atributos de clase vehiculosCreados y kilometrosTotales, así como el atributo de
 instancia kilometrosRecorridos. Crea también algún método específico para cada una de las subclases.
 Prueba las clases creadas mediante un programa con un menú como el que se muestra en el ejemplo:
-Ejemplo:
+
+## Ejemplo 1
+
+```
 1. Anda con la bicicleta
 2. Haz el caballito con la bicicleta
 3. Anda con el coche
@@ -15,6 +18,9 @@ Ejemplo:
 Elige una opción (1-7):
 1
 ¿Cuántos kilómetros quiere recorrer? 20
+```
+## Ejemplo 2
+```
 1. Anda con la bicicleta
 2. Haz el caballito con la bicicleta
 3. Anda con el coche
@@ -25,25 +31,31 @@ Elige una opción (1-7):
 Elige una opción (1-7):
 2
 Estoy haciendo el caballito
+```
 
 # Ejercicio 2
 
 Crea la clase Fraccion. Los atributos serán numerador y denominador. Y algunos de los métodos pueden
 ser invierte, simplifica, multiplica, divide, etc. Prueba la clase creada en un programa en el que se
 instancien objetos y se les apliquen métodos.
-Ejemplo:
+## Ejemplo
+```
 -7/8 x 5 = -35/8
 -7/8 ^-1 = -8/7
 -7/8 x 3/5 = -21/40
 -7/8 : 3/5 = -35/24
 -910/350 = -13/5
+```
 
 # Ejercicio 3
 
 Crea la clase Poligono. Debe tener una propiedad *número de lados". Debe tener un método que calcule el area y un método que calcule el perimetros.
 Crea la clase Cuadrado que herede de Poligono y sobreescriba los métodos. Crea los constructores necesarios para crear un cuadrado.
 Crea la clase Triangulo que herede también de Poligono y sobreescriba los métodos heredados. Crea los consutructores necesarios para crear un triangulo.
+Desarrolla el método principal para crerar poligonos de diferente tipo y probarlo
 
 # Ejercicio 4
+
 Crea una clase llamada Entero, que tenga un atributo de un número entero de hasta 5 cifras.
-Implementa los métodos primeraCifra, ultimaCifra, cantidadDigitos y esCapicua (este devuelve un booleano)
+Implementa los métodos primeraCifra, ultimaCifra, cantidadDigitos y esCapicua (este devuelve un booleano).
+Desarrolla el método principal para probar tu clase Entero.
