@@ -3,7 +3,7 @@ Un bucle es una sentencia que nos permite repetir un número de veces un bloque 
 * Bucles indeterminados. Dependen de una condición y no sabemos a priori el número de *iteraciones* que va a hacer
 * Bucles determinados. Sabemos el número de repeticiones que queremos hacer.
 
-El uso de un tipo de bucle u otra dependará del contexto donde queremos ejecutarlo 
+Cada tipo de bucle es más adecuado para ciertos requisitos.
 
 ## Bucle While
 El bucle While (o bucle Mientras) es un bucle indeterminado de *precondición*, es decir se verifica la condición al inicio de la ejecución e iterará mientas la condición sea verdadera
@@ -49,6 +49,7 @@ while (acumulado <= 1_000_000) {
 ```
 
 ## Bucle Do-While
+El bucle do-while es el otro bucle indeterminado. A diferencia del bucle *while* la condición se verifica despues de que se ejecute el bucle.
 
 ```mermaid
 flowchart TD
@@ -77,6 +78,8 @@ do  {
 
 ## Bucle For
 
+En **Java** el bucle determinado se llama bucle *for*, su sintaxis es la siguiente:
+
 ```java
 
 for (int indice = 0; indice < 10; indice++ ) {
@@ -84,3 +87,29 @@ for (int indice = 0; indice < 10; indice++ ) {
 }
 
 ```
+Repasemos las partes que tiene:
+
+```java
+// Declara la variable indice y la inicia a 0. ¡La variable indice sólo es visible en el bucle!
+int indice = 0;
+// Condición de finalización. Se evalua cada vez que se comienza una iteración: si es verdadera se ejecuta la iteración, si es falsa se termina la ejecución
+indice < 10;
+// Paso. Indicamos en cuanto queremos avanzar el indice al finalizar la iteración. Normalmente daremos un sólo paso, pero podemos indicar un paso diferente
+indice++; 
+
+```
+## Bucles anidados
+
+Una construcción muy común es la de anidar un bucle dentro de otro. Es decir, ejecutamos un bucle que en su cuerpo tiene otro bucle. Hay que ser cautelosos con este tipo de ordenación de código ya que puede aumentar mucho la complejidad de nuestro código.
+
+```java
+
+// Suponemos que queremos recorrer los 7 dias de una semana y las 6 horas de clase
+for (int dia=1; dia<=7; dia++) {
+    for (int hora=1; hora<=6; hora++) {
+        // Hacemos algo
+    }
+}
+
+```
+Estos bucles anidados hara que el código del bloque se ejecute $6*7$ veces, por lo que podemos ver lo rapido que aumenta el número de iteraciones.
