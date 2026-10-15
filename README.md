@@ -1,11 +1,12 @@
-# Programación 1º Desarrollo de Aplicaciones Web Mañana
+# Programación 1º Desarrollo de Aplicaciones [Especialidad] [Turno]
 
 ## Horario
-* Lunes de 9:15 a 11:15
-* Miercoles de 9:15 a 11:15 y 11:45 a 12:45
-* Viernes de 11:45 a 14:45
+
+* Dia de XX:XX a XX:XX
+
 ## Profesor
-[David Hormigo Ramírez](mailto://dhorram948@g.educaand.es)
+
+[TBD](#)
 
 ## Teoría y ejercicios
 
@@ -17,4 +18,5 @@
 | 4 | Lectura de teclado | |
 | 5 | [Introducción POO](./poo/TEORIA.md) | [Ejercicios](./poo/EJERCICIOS.md) |
 | 6 | [Condicionales](./condicionales/TEORIA.MD) | [Ejercicios](./condicionales/EJERCICIOS.md) |
-| 7 | [Bucles](./bucles/TEORIA.md) | |
+| 7 | [Bucles](./bucles/TEORIA.md) | [Ejercicios](./bucles/EJERCICIOS.md) |
+| 8 | [Excepciones](./excepciones/TEORIA.md) | [Ejercicios](./excepciones/EJERCICIOS.md) |
