@@ -32,6 +32,7 @@ En este caso concreto, la clase Scanner tiene el método **hasNextInt** que nos 
 
 ```java
 // El condicional evalúa si el siguiente dato es un entero SIN consumirlo todavía
+Scanner scanner = new Scanner(System.in);
 if (scanner.hasNextInt()) {
 	// Ahora sí lo leemos con seguridad
 	int numero = scanner.nextInt(); 
@@ -40,6 +41,54 @@ if (scanner.hasNextInt()) {
 	String entradaInvalida = scanner.next(); // Consumimos el texto incorrecto para limpiar el scanner
     System.out.println("Error: '" + entradaInvalida + "' no es un número entero válido.");
 }
+scanner.close();
 
 ```
+Sin embargo, hay veces que no tenemos una manera de controlar la excepción con un condicional o un bucle y necesitamos la estructura *try-catch*.
+
+## Bloque try-catch-finally
+
+El bloque try-catch-finally es una primitiva de Java que esta diseñado para estructura el código que puede lanzar una excepción.
+
+```java
+try {
+	// Zona de "seguridad". Este bloque contiene el código que puede lanzar
+	// una excepción, de tal manera que ira ejecutandose hasta finalizar o 
+	// hasta que se produzca un error
+
+} 
+catch (Exception ex) {
+	// Manejador de la excepción
+	// Este bloque se ejecutará SOLO si se ha producido la excepción
+}
+finally {
+	// Este bloque es opcional, pero nos sirve para hacer código que queremos hacer
+	// siempre, se produzca el error o no
+}
+```
+
+De esta manera, podríamos reescribir el manejo de errores del ejemplo previo de la siguiente manera:
+
+```java
+Scanner scanner = new Scanner(System.in);
+int numero;
+try {
+	// el siguiente método puede producir una excepción de tipo InputMismatchException, pero como he añadido un bloque catch para manejarla, si se produciera daría un mensaje adecuado al usuario
+	numero = scanner.nextInt(); 
+	// Solo se ejecuta, si se ha introducido un entero
+    System.out.println("¡Gracias! El número es: " + numero);
+} 
+catch (InputMismatchException ex) {
+
+    System.out.println("Error! No es un entero!");
+}
+finally {
+	// El scanner lo quiero cerrar siempre
+	scanner.close()
+}
+
+```
+
+
+
 
