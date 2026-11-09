@@ -20,3 +20,7 @@
 | 6 | [Condicionales](./condicionales/TEORIA.MD) | [Ejercicios](./condicionales/EJERCICIOS.md) |
 | 7 | [Bucles](./bucles/TEORIA.md) | [Ejercicios](./bucles/EJERCICIOS.md) |
 | 8 | [Excepciones](./excepciones/TEORIA.md) | [Ejercicios](./excepciones/EJERCICIOS.md) |
+| 9 | [Aleatorios](./aleatorios/TEORIA.md) | [Ejercicios](#) |
+| 10 | [Funciones](#) | [Ejercicios](#) |
+| 11 | [Arrays](#) | [Ejercicios](#) |
+
