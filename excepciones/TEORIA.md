@@ -89,6 +89,22 @@ finally {
 
 ```
 
+## Lanzando excepciones
+Hasta ahora hemos visto como *capturar* las excepciones, pero no como se *lanzan*. Para ello tenemos en Java la sentencia *throw* que nos permite crear una nueva excepción que **detiene** el flujo de ejecución.
+
+```java
+public double divisionSegura(double dividendo, double divisor) {
+	double resultadoSeguro = 0.0;
+	// Si el divisor es 0, paramos el programa lanzando una excepción que avise de ello
+	if (divisor == 0) {
+		throw new ArithmeticException();
+	}
+	// Sabemos que este división se puede producir
+  	resultadoSeguro = dividendo / divisor;
+  	return resultadoSeguro;
+}
+```
+
 
 
 
