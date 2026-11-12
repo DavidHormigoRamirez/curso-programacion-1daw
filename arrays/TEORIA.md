@@ -24,3 +24,21 @@ numeros[0] = 25;
 // Lo mismo para leerlo, se hace por índice
 System.out.println(numero[0]); //
 ```
+
+## Recorrer arrays
+
+```java
+int[] edades = {18,19,18,32,21,20,18,25};
+
+// La manera tradicional con un bucle for
+// El array comienza en el indice 0
+for (int i = 0; i < edades.length; i++) {
+    System.out.println("Elemento en la posición " + i + ": " + edades[i]);
+}
+
+// Otra forma es con un bucle for-each
+// En este caso la variable edad va tomando el valor de cada elemento del array edades desde la primera posición hasta la última
+for (int edad : edades) {
+  // ...
+}
+```
