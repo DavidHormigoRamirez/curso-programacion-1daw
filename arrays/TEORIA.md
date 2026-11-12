@@ -42,3 +42,26 @@ for (int edad : edades) {
   // ...
 }
 ```
+
+## Arrays bidimensioaneles
+
+Podemos declarar arrays de dos dimensiones o matrices. Tenemos que verlo que una matriz es en realidad un array de arrays: Cada elemento del primer array es un array.
+
+```java
+// Declaramos una matríz con una celda por cada dia del año:
+// 12 filas
+// 31 columnas
+int[][] daysOfYear = new int[12][31];
+// 1 fila, 1 columna (1 de enero?)
+daysOfYear[0][0] = 10;
+
+
+// Para recorrer una matriz lo hacemos con bucles anidados
+int contador = 1;
+for (int i=0;i < days.length;i++) {
+  for (int j=0;j < days[i].length;j++) {
+    days[i][j] = ++contador;
+  }
+}
+
+```
