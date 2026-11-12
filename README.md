@@ -22,5 +22,5 @@
 | 8 | [Excepciones](./excepciones/TEORIA.md) | [Ejercicios](./excepciones/EJERCICIOS.md) |
 | 9 | [Aleatorios](./aleatorios/TEORIA.md) | [Ejercicios](#) |
 | 10 | [Funciones](#) | [Ejercicios](#) |
-| 11 | [Arrays](#) | [Ejercicios](#) |
+| 11 | [Arrays](./arrays/TEORIA.md) | [Ejercicios](./arrays/EJERCICIOS.md) |
 

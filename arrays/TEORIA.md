@@ -43,6 +43,19 @@ for (int edad : edades) {
 }
 ```
 
+## Arrays de objetos
+
+Los arrays no solo contienen tipos primitivos, pueden contener objectos.
+
+```java
+public class Dog {
+  // ...
+}
+
+Dog[] dogs = new Dog[10];
+dogs[0] = new Dog();
+```
+
 ## Arrays bidimensioaneles
 
 Podemos declarar arrays de dos dimensiones o matrices. Tenemos que verlo que una matriz es en realidad un array de arrays: Cada elemento del primer array es un array.
