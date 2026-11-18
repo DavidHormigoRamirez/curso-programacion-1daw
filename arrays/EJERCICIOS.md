@@ -81,3 +81,29 @@ Una vez rellena la matriz, el programa mostrará un menú interactivo en bucle h
 5. Comparativa de estaciones: Calcular y mostrar la temperatura media del verano (junio, julio, agosto) frente a la del invierno (diciembre, enero, febrero).
 
 6. Salir.
+
+## Sistema de Gestión de Mediateca
+
+### Descripción del problema
+
+Una mediateca municipal necesita informatizar su gestión diaria y nos ha encargado el desarrollo de una aplicación de consola en Java que será utilizada exclusivamente por el personal bibliotecario.
+
+El sistema debe permitir administrar el fondo documental de la mediateca, compuesto actualmente por tres tipos de obras: **libros, DVDs y vinilos**. Aunque todas las obras comparten información básica de catalogación (como su identificador, título o autor), cada formato requiere registrar sus propios datos específicos (por ejemplo, la editorial en los libros, la productora en los DVDs o la discográfica en los vinilos).
+
+Para organizar el almacenamiento físico y lógico del catálogo en memoria, la dirección técnica exige que todas las obras se guarden en una **única matriz bidimensional** de 3 filas (una fila destinada a cada tipo de obra) y 100 columnas (capacidad máxima por tipo).
+
+### Funcionamiento y reglas de negocio
+
+El programa debe ofrecer un menú operativo para que el bibliotecario pueda realizar las siguientes gestiones:
+
+* **Gestión del catálogo:** Dar de alta nuevas obras en la fila correspondiente de la matriz (controlando que no se supere el espacio disponible),consultar qué obras se encuentran actualmente prestadas, detallando toda su información.
+* **Gestión de socios:** Dar de alta a nuevos usuarios y dar de baja a socios existentes (siempre que no tengan ninguna obra pendiente de devolver). También debe ser posible localizar rápidamente a un usuario buscando por su apellido.
+* **Préstamos:** Registrar el préstamo de una obra disponible a un socio. De cada préstamo debe quedar constancia de qué obra se ha llevado, qué usuario la tiene y cuál es su fecha límite de devolución, que será siempre de **15 días** a partir del momento en que se realiza el préstamo. Un mismo socio nunca podrá tener más de **5 obras prestadas** simultáneamente.
+* **Reservas:** Si un socio solicita una obra que ya está prestada, el sistema permitirá dejársela reservada (siempre que no haya sido reservada ya por otra persona). Un socio puede acumular un máximo de **2 reservas** activas.
+* **Devoluciones y sanciones:** Cuando un socio devuelve una obra, el sistema comprobará si se entrega en plazo. En caso de retraso, se aplicará automáticamente una penalización de **3 días de sanción por cada día de demora**. Mientras un usuario esté sancionado, no podrá realizar nuevos préstamos ni reservas.
+
+### Requisitos técnicos y entregables
+
+1. **Diseño previo (Modelado):** Antes de escribir el código, deberás analizar el problema y diseñar la arquitectura de clases aplicando **herencia y polimorfismo**. Decide qué atributos y métodos van en cada clase, qué visibilidad tendrán y cómo se relacionarán los objetos entre sí (obras, usuarios, préstamos, reservas, etc.).
+2. **Implementación en Java:** Desarrolla la aplicación respetando la restricción de la matriz de $3 \times 100$ para el catálogo. Incluye una carga inicial de datos de prueba (algunas obras de cada tipo y varios usuarios) para poder probar todas las opciones del menú nada más arrancar el programa.
+3. **Robustez:** El programa debe controlar posibles errores de entrada del usuario y mostrar mensajes claros cuando una operación no se pueda llevar a cabo por incumplir alguna regla de la mediateca.
