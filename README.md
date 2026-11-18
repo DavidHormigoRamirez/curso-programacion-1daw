@@ -1,12 +1,14 @@
-# Programación 1º Desarrollo de Aplicaciones [Especialidad] [Turno]
+# Programación 1º Desarrollo de Aplicaciones Web Mañana
 
 ## Horario
 
-* Dia de XX:XX a XX:XX
+* Lunes de 9:15 a 11:15
+* Miercoles de 9:15 a 11:15 y de 11:45 a 12:45
+* Viernes de 11:45 a 14:45
 
 ## Profesor
 
-[TBD](#)
+[David Hormigo Ramírez](mailto://dhorram948@g.educaand.es)
 
 ## Teoría y ejercicios
 
